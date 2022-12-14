@@ -2,7 +2,9 @@
 using Hospital_WebAPI.DataAccess.Repository;
 using Hospital_WebAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
 
+[assembly: AssemblyTitle("Hospital_UnitTest")]
 namespace Hospital_WebAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -16,7 +18,6 @@ namespace Hospital_WebAPI.Controllers
         public PatientsController(IMapper mapper, IHospitalRepository repository)
         {
             _mapper = mapper;
-
             _repository = repository;
         }
 

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Hospital_WebAPI.Models
 {
@@ -21,5 +22,10 @@ namespace Hospital_WebAPI.Models
         public string Email { get; set; } = string.Empty;
 
         public string Town { get; set; } = string.Empty;
+
+        [PasswordPropertyText]
+        public string Password { get; set; }
+
+        public Doctors DoctorData { get; set; }
     }
 }

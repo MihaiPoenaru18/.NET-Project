@@ -3,6 +3,7 @@
     public enum PatientSex
     {
         Male,
-        Female
+        Female,
+        UnKnown
     }
 }
